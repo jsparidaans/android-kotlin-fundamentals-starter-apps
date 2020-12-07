@@ -14,11 +14,12 @@
  * limitations under the License.
  */
 
-package com.example.android.navigation
+package com.example.android.navigation.view.activity
 
 import android.os.Bundle
 import androidx.appcompat.app.AppCompatActivity
 import androidx.databinding.DataBindingUtil
+import com.example.android.navigation.R
 import com.example.android.navigation.databinding.ActivityMainBinding
 
 class MainActivity : AppCompatActivity() {
