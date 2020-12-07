@@ -14,7 +14,7 @@
  * limitations under the License.
  */
 
-package com.example.android.dessertclicker
+package com.example.android.dessertclicker.view
 
 import android.content.ActivityNotFoundException
 import android.os.Bundle
@@ -24,6 +24,7 @@ import android.widget.Toast
 import androidx.appcompat.app.AppCompatActivity
 import androidx.core.app.ShareCompat
 import androidx.databinding.DataBindingUtil
+import com.example.android.dessertclicker.R
 import com.example.android.dessertclicker.databinding.ActivityMainBinding
 
 class MainActivity : AppCompatActivity() {
