@@ -20,7 +20,7 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:fillViewport="true"
-    tools:context="com.example.android.navigation.RulesFragment">
+    tools:context="com.example.android.navigation.view.fragment.RulesFragment">
 
     <androidx.constraintlayout.widget.ConstraintLayout
         android:layout_width="match_parent"
@@ -36,7 +36,9 @@
             app:layout_constraintEnd_toEndOf="parent"
             app:layout_constraintStart_toStartOf="parent"
             app:layout_constraintTop_toTopOf="parent"
+            android:contentDescription="@string/description_rules_image"
             app:srcCompat="@drawable/trivia_rules" />
+
 
         <TextView
             android:id="@+id/rulesText"

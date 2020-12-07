@@ -17,7 +17,7 @@
 <layout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
-    tools:context="com.example.android.navigation.GameWonFragment">
+    tools:context="com.example.android.navigation.view.fragment.GameWonFragment">
 
     <androidx.constraintlayout.widget.ConstraintLayout
         android:id="@+id/gameWonConstraintLayout"
@@ -31,7 +31,7 @@
             android:layout_height="wrap_content"
             android:paddingStart="@dimen/button_padding"
             android:paddingEnd="@dimen/button_padding"
-            android:text="Next Match"
+            android:text="@string/btn_win_text"
             android:textColor="@color/youWinDark"
             android:textSize="@dimen/button_text_size"
             android:textStyle="bold"
@@ -53,6 +53,7 @@
             app:layout_constraintEnd_toEndOf="parent"
             app:layout_constraintStart_toStartOf="parent"
             app:layout_constraintTop_toTopOf="parent"
+            android:contentDescription="@string/description_win_image"
             app:srcCompat="@drawable/you_win" />
 
     </androidx.constraintlayout.widget.ConstraintLayout>

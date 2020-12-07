@@ -23,7 +23,7 @@
 
         <variable
             name="game"
-            type="com.example.android.navigation.GameFragment" />
+            type="com.example.android.navigation.view.fragment.GameFragment" />
     </data>
 
     <ScrollView
@@ -50,6 +50,7 @@
                 app:layout_constraintStart_toStartOf="parent"
                 app:layout_constraintTop_toTopOf="parent"
                 app:layout_constraintVertical_chainStyle="packed"
+                android:contentDescription="@string/description_question_image"
                 app:srcCompat="@drawable/android_category_simple" />
 
             <TextView
