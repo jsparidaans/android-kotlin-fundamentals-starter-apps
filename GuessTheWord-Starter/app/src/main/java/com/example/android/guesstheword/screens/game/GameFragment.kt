@@ -77,7 +77,7 @@ class GameFragment : Fragment() {
         updateWordText()
     }
 
-    private fun onEndGame(){
+    private fun onEndGame() {
         gameFinished()
     }
 

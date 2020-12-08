@@ -5,8 +5,8 @@ import androidx.lifecycle.ViewModel
 
 class GameViewModel : ViewModel() {
 
-        // The current word
-        var word = ""
+    // The current word
+    var word = ""
 
     // The current score
     var score = 0
@@ -21,7 +21,7 @@ class GameViewModel : ViewModel() {
 
     override fun onCleared() {
         super.onCleared()
-        Log.i("GameViewModel","GameViewModel destroyed!")
+        Log.i("GameViewModel", "GameViewModel destroyed!")
     }
 
     /** Methods for buttons presses **/
@@ -36,7 +36,7 @@ class GameViewModel : ViewModel() {
         nextWord()
     }
 
-        /**
+    /**
      * Resets the list of words and randomizes the order
      */
     private fun resetList() {
@@ -65,7 +65,8 @@ class GameViewModel : ViewModel() {
         )
         wordList.shuffle()
     }
-        /**
+
+    /**
      * Moves to the next word in the list
      */
     private fun nextWord() {
