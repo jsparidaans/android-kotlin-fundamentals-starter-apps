@@ -18,6 +18,7 @@ fun TextView.setSleepQualityString(item: SleepNight) {
     text = convertNumericQualityToString(item.sleepQuality, context.resources)
 }
 
+@BindingAdapter("sleepImage")
 fun ImageView.setSleepImage(item: SleepNight) {
     setImageResource(when (item.sleepQuality) {
         0 -> R.drawable.ic_sleep_0
