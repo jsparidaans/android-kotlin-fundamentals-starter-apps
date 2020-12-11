@@ -22,7 +22,6 @@ import android.view.View
 import android.view.ViewGroup
 import androidx.databinding.DataBindingUtil
 import androidx.fragment.app.Fragment
-import androidx.lifecycle.Observer
 import androidx.lifecycle.ViewModelProvider
 import androidx.navigation.fragment.findNavController
 import com.example.android.trackmysleepquality.R
@@ -75,7 +74,7 @@ class SleepTrackerFragment : Fragment() {
 
         // Add an Observer on the state variable for showing a Snackbar message
         // when the CLEAR button is pressed.
-        sleepTrackerViewModel.showSnackBarEvent.observe(viewLifecycleOwner, Observer {
+        sleepTrackerViewModel.showSnackBarEvent.observe(viewLifecycleOwner, {
             if (it == true) { // Observed state is true.
                 Snackbar.make(
                         requireActivity().findViewById(android.R.id.content),
@@ -89,7 +88,7 @@ class SleepTrackerFragment : Fragment() {
         })
 
         // Add an Observer on the state variable for Navigating when STOP button is pressed.
-        sleepTrackerViewModel.navigateToSleepQuality.observe(viewLifecycleOwner, Observer { night ->
+        sleepTrackerViewModel.navigateToSleepQuality.observe(viewLifecycleOwner, { night ->
             night?.let {
                 // We need to get the navController from this, because button is not ready, and it
                 // just has to be a view. For some reason, this only matters if we hit stop again
@@ -109,7 +108,7 @@ class SleepTrackerFragment : Fragment() {
 
         val adapter = SleepNightAdapter()
         binding.sleepList.adapter = adapter
-        sleepTrackerViewModel.nights.observe(viewLifecycleOwner, Observer {
+        sleepTrackerViewModel.nights.observe(viewLifecycleOwner, {
             it?.let {
                 adapter.submitList(it)
             }
