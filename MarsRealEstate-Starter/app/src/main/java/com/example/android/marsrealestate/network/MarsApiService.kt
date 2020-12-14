@@ -38,7 +38,7 @@ interface MarsApiService {
     @GET("realestate")
     suspend fun getProperties(): List<MarsProperty>
 
-    object MarsApi {
-        val retrofitService: MarsApiService by lazy { retrofit.create(MarsApiService::class.java) }
-    }
+}
+object MarsApi {
+    val retrofitService: MarsApiService by lazy { retrofit.create(MarsApiService::class.java) }
 }
