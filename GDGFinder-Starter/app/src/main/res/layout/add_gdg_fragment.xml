@@ -76,7 +76,7 @@
                 app:layout_constraintBottom_toTopOf="@+id/EditTextEmail"
                 app:layout_constraintEnd_toEndOf="parent"
                 app:layout_constraintStart_toStartOf="parent"
-                app:layout_constraintTop_toBottomOf="@+id/imageView"></EditText>
+                app:layout_constraintTop_toBottomOf="@+id/imageView" />
 
             <EditText
                 android:id="@+id/EditTextEmail"
@@ -91,7 +91,7 @@
                 app:layout_constraintBottom_toTopOf="@+id/EditTextCity"
                 app:layout_constraintEnd_toEndOf="parent"
                 app:layout_constraintStart_toStartOf="parent"
-                app:layout_constraintTop_toBottomOf="@+id/EditTextName"></EditText>
+                app:layout_constraintTop_toBottomOf="@+id/EditTextName" />
 
             <EditText
                 android:id="@+id/EditTextCity"
@@ -106,7 +106,7 @@
                 app:layout_constraintBottom_toTopOf="@+id/EditTextCountry"
                 app:layout_constraintEnd_toEndOf="parent"
                 app:layout_constraintStart_toStartOf="parent"
-                app:layout_constraintTop_toBottomOf="@+id/EditTextEmail"></EditText>
+                app:layout_constraintTop_toBottomOf="@+id/EditTextEmail" />
 
             <EditText
                 android:id="@+id/EditTextCountry"
@@ -121,7 +121,7 @@
                 app:layout_constraintBottom_toTopOf="@+id/EditTextRegion"
                 app:layout_constraintEnd_toEndOf="parent"
                 app:layout_constraintStart_toStartOf="parent"
-                app:layout_constraintTop_toBottomOf="@+id/EditTextCity"></EditText>
+                app:layout_constraintTop_toBottomOf="@+id/EditTextCity" />
 
             <EditText
                 android:id="@+id/EditTextRegion"
@@ -136,7 +136,7 @@
                 app:layout_constraintBottom_toTopOf="@+id/contentGroup"
                 app:layout_constraintEnd_toEndOf="parent"
                 app:layout_constraintStart_toStartOf="parent"
-                app:layout_constraintTop_toBottomOf="@+id/EditTextCountry"></EditText>
+                app:layout_constraintTop_toBottomOf="@+id/EditTextCountry" />
 
             <LinearLayout
                 android:id="@+id/contentGroup"
